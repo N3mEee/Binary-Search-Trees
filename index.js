@@ -38,15 +38,9 @@ class Tree {
     }
 
     #minValue(root) {
-<<<<<<< HEAD
         let minv = root.data;
         while (root.left != null) {
             minv = root.left.data;
-=======
-        let minv = root.key;
-        while (root.left != null) {
-            minv = root.left.key;
->>>>>>> 2f010f0d248d08161a480539fe58ac02f80767bd
             root = root.left;
         }
         return minv;
@@ -73,7 +67,6 @@ class Tree {
         }
         return node;
     }
-<<<<<<< HEAD
 
     height(node = this.root) {
         if (node === null) return -1;
@@ -102,8 +95,6 @@ class Tree {
         const sorted = [...new Set(this.inorder().sort((a, b) => a - b))];
         this.root = this.buildTree(sorted);
     }
-=======
->>>>>>> 2f010f0d248d08161a480539fe58ac02f80767bd
 }
 
 const prettyPrint = (node, prefix = "", isLeft = true) => {
